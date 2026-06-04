@@ -6,13 +6,32 @@ import {
     terms
 } from '../terms';
 
+const resumeAssets = require.context('../../resume', true, /\.(png|jpe?g|gif|webp|svg)$/i);
+
+function resolveResumeImage (imagePath) {
+    if (!imagePath || typeof imagePath !== 'string') {
+        return imagePath;
+    }
+
+    const normalizedPath = imagePath.replace(/^resume\//, './');
+
+    try {
+        return resumeAssets(normalizedPath);
+    } catch (err) {
+        return imagePath;
+    }
+}
+
 // Called by templates to decrease redundancy
 function getVueOptions (name) {
     const opt = {
         name: name,
         data () {
+            const person = yaml.load(PERSON);
+            person.image = resolveResumeImage(person.image);
+
             return {
-                person: yaml.load(PERSON),
+                person,
                 terms: terms,
             };
         },

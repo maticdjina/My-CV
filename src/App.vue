@@ -20,6 +20,12 @@ export default {
 @import '../node_modules/npm-font-open-sans-condensed/open-sans-condensed.css';
 @import '../node_modules/raleway-webfont/raleway.css';
 
+
+html, body, #app {
+  min-height: 100%;
+  margin: 0;
+  overflow-y: auto;
+}
 body {
   padding: 0;
   margin: 0;

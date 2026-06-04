@@ -181,8 +181,7 @@
       </div>
     </div>
 
-    <img class="picture"/>
-
+    <img class="picture" :src="person.image" />
   </div>
 </template>
 
@@ -218,7 +217,7 @@ export default Vue.component(name, getVueOptions(name));
   width: @picture-size;
   border-radius: 50%;
   border: 5px solid @accent-color;
-  content: url('../../resume/id.jpg');
+  
   z-index: 2;
 }
 
