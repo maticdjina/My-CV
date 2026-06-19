@@ -25,15 +25,18 @@ birth:
   location: Loznica
 
 # you may add more experiences by duplicating the template
+projects:
+- name: MQTT Taxi Dispatch System
+  description: Distributed taxi dispatch system built in Java using MQTT communication between customers, taxis and dispatchers.
+  url: https://github.com/maticdjina/mqtt-taxi-dispatch-system
 
-education:
-- degree: Faculty of Computer Science, Union Belgrade University
-  timeperiod: "2022 - (expected 2026)"
-  description: Computer Engineering
+- name: RAF Event Booker
+  description: Full-stack event management application built with React, Node.js and SQLite.
+  url: https://github.com/maticdjina/RAFEventBooker
 
-- degree: Nikola Tesla Electrical Engineering School, Belgrade
-  timeperiod: 2018 - 2022
-  description: Multimedia electrical technician
+- name: CV Website
+  description: Personal resume website customized with Vue.js and deployed through GitHub.
+  url: https://github.com/maticdjina/My-CV
 
 # skill level goes from 0 to 100
 skills:
@@ -55,10 +58,14 @@ skills:
  # level: 99
 knowledge: Also proficient in Adobe Photoshop and Illustrator
 
-projects:
-- name: GitHub Portfolio
-  description: Collection of academic and personal software projects.
-  url: https://github.com/maticdjina
+education:
+- degree: Faculty of Computer Science, Union Belgrade University
+  timeperiod: "2022 - (expected 2026)"
+  description: Computer Engineering
+
+- degree: Nikola Tesla Electrical Engineering School, Belgrade
+  timeperiod: 2018 - 2022
+  description: Multimedia electrical technician
 
 # optional, not all resume templates have hobbies included
 

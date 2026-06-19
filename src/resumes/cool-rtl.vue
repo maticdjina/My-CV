@@ -66,7 +66,21 @@
         <!-- Main -->
          
         <section class="main">
-          <section class="section">
+          <section v-if="person.projects" class="section">
+
+<h2 class="section__head">
+  <span class="badge"><i class="ico material-icons">code</i></span>{{ lang.projects }}
+  <span class="hr" />
+</h2>
+<div class="grid grid--3">
+  <a v-for="(p, i) in person.projects" :key="i" :href="p.url" class="card card--paper">
+    <h3 class="card__title">{{ p.name }}</h3>
+    <p class="card__platform">{{ p.platform }}</p>
+    <p class="card__desc">{{ p.description }}</p>
+  </a>
+</div>
+</section>
+          <section class="section page-break">
             <h2 class="section__head">
               <span class="badge"><i class="ico material-icons">school</i></span>{{ lang.education }}
               <span class="hr" />
@@ -81,22 +95,6 @@
             </div>
           </section>
          
-
-          
-          <section v-if="person.projects" class="section page-break">
-
-            <h2 class="section__head">
-              <span class="badge"><i class="ico material-icons">code</i></span>{{ lang.projects }}
-              <span class="hr" />
-            </h2>
-            <div class="grid grid--3">
-              <a v-for="(p, i) in person.projects" :key="i" :href="p.url" class="card card--paper">
-                <h3 class="card__title">{{ p.name }}</h3>
-                <p class="card__platform">{{ p.platform }}</p>
-                <p class="card__desc">{{ p.description }}</p>
-              </a>
-            </div>
-          </section>
 
           
         </section>
