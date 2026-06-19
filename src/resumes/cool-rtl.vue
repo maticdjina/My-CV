@@ -83,8 +83,8 @@
          
 
           
-
           <section v-if="person.projects" class="section page-break">
+
             <h2 class="section__head">
               <span class="badge"><i class="ico material-icons">code</i></span>{{ lang.projects }}
               <span class="hr" />
@@ -272,7 +272,7 @@ export default Vue.component(name, getVueOptions(name));
 .skill:hover { border-color: var(--gold); color: var(--gold); }
 
 .contact {
-  list-style: lower-alpha;
+  list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
@@ -282,21 +282,24 @@ export default Vue.component(name, getVueOptions(name));
 .contact li {
   display: flex;
   align-items: center;
-  margin-bottom: 8px;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 .contact a {
   display: flex;
   align-items: center;
-  text-decoration: none;
-  margin-bottom: 0; 
+  gap: 10px;
+
+  /*text-decoration: none;
+  margin-bottom: 0; */
 }
 .contact span { color: rgba(236, 235, 228, 0.85); }
 
 /* === Main === */
 .main {
   padding: 34px 40px;
-  display: flex;
+  display: block;
   flex-direction: column;
   gap: 28px;
 }
@@ -329,20 +332,36 @@ export default Vue.component(name, getVueOptions(name));
   justify-content: center;
   width: 42px;
   height: 42px;
-  border-radius: 78%;
+  mid-width: 42px;
+  border-radius: 50%;
   background: var(--gold-soft);
   color: var(--gold);
 }
-.ico { 
-  width: 16px; 
-  height: 16px;
-  min-width: 16px;
-  margin-right: 12px;
-  line-height: 1;
-  display: flex;
-  vertical-align: middle;
+.badge .ico {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  margin: 0;
+  display: inline-flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  font-size: 20px;
+  line-height: 42px;
+}
+.ico { 
+  width: 20px; 
+  height: 20px;
+  min-width: 20px;
+
+ /* margin-right: 12px;*/
+  line-height: 20px;
+  display: inline-flex;
+  /*vertical-align: middle;*/
+  align-items: center;
+  justify-content: center; 
+  margin-right: 10px;
+  font-size: 16px;
+}
 
 /* === Timeline === */
 .timeline {
@@ -465,14 +484,12 @@ export default Vue.component(name, getVueOptions(name));
   word-break: break-all;
 }
 .page-break {
-  page-break-before: always;
-  break-before: page;
-
-  margin-top: 200px; /* ili 300px ako hoćeš još niže */
+  margin-top: 20px; 
 }
 @media print {
   .page-break {
     page-break-before: always;
+    page-break:page;
   }
 }
 </style>

@@ -30,7 +30,6 @@ education:
 - degree: Faculty of Computer Science, Union Belgrade University
   timeperiod: "2022 - (expected 2026)"
   description: Computer Engineering
-  website: https://example.com
 
 - degree: Nikola Tesla Electrical Engineering School, Belgrade
   timeperiod: 2018 - 2022
@@ -57,26 +56,11 @@ skills:
 knowledge: Also proficient in Adobe Photoshop and Illustrator
 
 projects:
-- name: Link 
-  platform: Vue
-  timeperiod: February 2016
-  description: 💼 Link to my projects
+- name: GitHub Portfolio
+  description: Collection of academic and personal software projects.
   url: https://github.com/maticdjina
 
 # optional, not all resume templates have hobbies included
-hobbies:
-- name: Video Games
-  iconClass: fa fa-gamepad
-  url: https://example.com
-
-- name: Drawing
-  iconClass: fa fa-pencil
-  url: https://example.com
-
-contributions:
-- name: best-resume-ever
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
-  url: https://github.com/salomonelli/best-resume-ever
 
 contact:
   email: djinamatiic@email.com
