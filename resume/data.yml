@@ -35,7 +35,7 @@ projects:
   url: https://github.com/maticdjina/RAFEventBooker
 
 - name: CV Website
-  description: Personal resume website customized with Vue.js and deployed through GitHub.
+  description: Personal resume website built with Vue.js and deployed using GitHub Pages.
   url: https://github.com/maticdjina/My-CV
 
 # skill level goes from 0 to 100
