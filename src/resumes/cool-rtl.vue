@@ -260,13 +260,16 @@ export default Vue.component(name, getVueOptions(name));
 .skill {
   font-size: 12px;
   padding: 6px 12px;
-  border: 1px solid var(--side-rule);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.18);
   text-decoration: none;
-  color: var(--side-fg);
+  color: #fff;
   transition: all 0.2s;
   margin: 0 8px 8px 0;
 }
-.skill:hover { border-color: var(--gold); color: var(--gold); }
+.skill:hover {  background: rgba(255,255,255,0.15);
+  border-color: var(--gold);
+  color: var(--gold); }
 
 .contact {
   list-style: none;
